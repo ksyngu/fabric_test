@@ -21,6 +21,7 @@ import (
 )
 
 // ExecutionConsumer allows callbacks from asycnhronous execution and statetransfer
+// lkw lkw 여기에 테스트 후 commit & push test
 type ExecutionConsumer interface {
 	Executed(tag interface{})                                // Called whenever Execute completes
 	Committed(tag interface{}, target *pb.BlockchainInfo)    // Called whenever Commit completes
