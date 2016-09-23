@@ -67,6 +67,13 @@ type batchMessageEvent batchMessage
 // batchTimerEvent is sent when the batch timer expires
 type batchTimerEvent struct{}
 
+/*
+	@brief 이거는 뭐하는 함수임
+	@param id는 아이디
+	@param config는 컨피그
+	@retval 리턴값
+	@see 여기를 보세요
+*/
 func newObcBatch(id uint64, config *viper.Viper, stack consensus.Stack) *obcBatch {
 	var err error
 
